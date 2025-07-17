@@ -166,7 +166,7 @@ func toolsCatalog() []openai.ChatCompletionToolParam {
 				"type": "object",
 				"properties": map[string]any{
 					"value": map[string]string{
-						"type":        "float",
+						"type":        "number",
 						"description": "The new health value for the Werewolf.",
 					},
 				},
@@ -183,7 +183,7 @@ func toolsCatalog() []openai.ChatCompletionToolParam {
 				"type": "object",
 				"properties": map[string]any{
 					"amount": map[string]string{
-						"type":        "float",
+						"type":        "number",
 						"description": "The amount to increase the Werewolf's health by.",
 					},
 				},
@@ -200,7 +200,7 @@ func toolsCatalog() []openai.ChatCompletionToolParam {
 				"type": "object",
 				"properties": map[string]any{
 					"amount": map[string]string{
-						"type":        "float",
+						"type":        "number",
 						"description": "The amount to decrease the Werewolf's health by.",
 					},
 				},
@@ -225,7 +225,7 @@ func toolsCatalog() []openai.ChatCompletionToolParam {
 				"type": "object",
 				"properties": map[string]any{
 					"value": map[string]string{
-						"type":        "float",
+						"type":        "number",
 						"description": "The new intelligence value for the Werewolf.",
 					},
 				},
@@ -242,7 +242,7 @@ func toolsCatalog() []openai.ChatCompletionToolParam {
 				"type": "object",
 				"properties": map[string]any{
 					"amount": map[string]string{
-						"type":        "float",
+						"type":        "number",
 						"description": "The amount to increase the Werewolf's intelligence by.",
 					},
 				},
@@ -259,7 +259,7 @@ func toolsCatalog() []openai.ChatCompletionToolParam {
 				"type": "object",
 				"properties": map[string]any{
 					"amount": map[string]string{
-						"type":        "float",
+						"type":        "number",
 						"description": "The amount to decrease the Werewolf's intelligence by.",
 					},
 				},

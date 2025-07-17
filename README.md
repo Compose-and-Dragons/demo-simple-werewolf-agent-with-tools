@@ -32,8 +32,7 @@ docker attach $(docker compose ps -q werewolf-agent)
 **From a container**:
 ```bash
 MODEL_RUNNER_BASE_URL=http://model-runner.docker.internal/engines/llama.cpp/v1 \
-MODEL_RUNNER_CHAT_MODEL=ai/qwen2.5:latest \
-MODEL_RUNNER_TOOLS_MODEL=ai/gemma3:latest \
+MODEL_RUNNER_MODEL=ai/qwen2.5:latest \
 go run main.go
 ```
 
@@ -41,8 +40,7 @@ go run main.go
 **From a local machine**:
 ```bash
 MODEL_RUNNER_BASE_URL=http://localhost:12434/engines/llama.cpp/v1 \
-MODEL_RUNNER_CHAT_MODEL=ai/qwen2.5:latest \
-MODEL_RUNNER_TOOLS_MODEL=ai/gemma3:latest \
+MODEL_RUNNER_MODEL=ai/qwen2.5:latest \
 go run main.go
 ```
 
