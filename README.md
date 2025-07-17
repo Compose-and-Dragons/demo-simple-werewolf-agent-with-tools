@@ -12,10 +12,8 @@ This character is designed to be used with **2 agents**:
 ## Model
 
 ```bash
-# Chat model
+# model
 docker model pull ai/qwen2.5:latest
-# Tools model
-docker model pull ai/qwen3:0.6B-Q4_K_M
 ```
 > If you use Docker Compose, this will be pulled automatically.
 
