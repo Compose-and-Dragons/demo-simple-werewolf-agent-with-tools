@@ -8,10 +8,15 @@ services:
     environment:
       - TERM=xterm-256color
     models:
-      qwen2_5:
+      chat:
         endpoint_var: MODEL_RUNNER_BASE_URL
-        model_var: MODEL_RUNNER_MODEL
+        model_var: MODEL_RUNNER_CHAT_MODEL
+      tools:
+        endpoint_var: MODEL_RUNNER_BASE_URL
+        model_var: MODEL_RUNNER_TOOLS_MODEL
 
 models:
-  qwen2_5:
+  chat:
+    model: ai/qwen2.5:latest
+  tools:
     model: ai/qwen2.5:latest

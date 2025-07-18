@@ -32,16 +32,16 @@ func main() {
 	if modelRunnerBaseUrl == "" {
 		panic("MODEL_RUNNER_BASE_URL environment variable is not set")
 	}
-	modelRunnerChatModel := os.Getenv("MODEL_RUNNER_MODEL")
+	modelRunnerChatModel := os.Getenv("MODEL_RUNNER_CHAT_MODEL")
 	fmt.Println("Using Model Runner Chat Model:", modelRunnerChatModel)
 
 	if modelRunnerChatModel == "" {
-		panic("MODEL_RUNNER_MODEL environment variable is not set")
+		panic("MODEL_RUNNER_CHAT_MODEL environment variable is not set")
 	}
 
-	modelRunnerToolsModel := os.Getenv("MODEL_RUNNER_MODEL")
+	modelRunnerToolsModel := os.Getenv("MODEL_RUNNER_TOOLS_MODEL")
 	if modelRunnerToolsModel == "" {
-		panic("MODEL_RUNNER_MODEL environment variable is not set")
+		panic("MODEL_RUNNER_TOOLS_MODEL environment variable is not set")
 	}
 	fmt.Println("Using Model Runner Tools Model:", modelRunnerToolsModel)
 

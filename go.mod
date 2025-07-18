@@ -3,8 +3,8 @@ module werewolf-agent
 go 1.24.0
 
 require (
-	github.com/budgies-nest/budgie v0.0.9
-	github.com/openai/openai-go v1.10.3
+	github.com/budgies-nest/budgie v0.1.0
+	github.com/openai/openai-go v1.11.0
 )
 
 require (
