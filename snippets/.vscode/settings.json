@@ -270,6 +270,22 @@
             "isWholeLine": false
         },
         {
+            "text": "TOOLS COMPLETION:",
+            "color": "#ffffff",
+            "backgroundColor": "#E75B11",
+            "border": "1px solid #E75B11",
+            "borderRadius": "3px",
+            "isWholeLine": false
+        },
+        {
+            "text": "CHAT COMPLETION:",
+            "color": "#ffffff",
+            "backgroundColor": "#070FAE",
+            "border": "1px solid #070FAE",
+            "borderRadius": "3px",
+            "isWholeLine": false
+        },
+        {
             "text": "TOOL CALLS:",
             "color": "#ffffff",
             "backgroundColor": "#E3141B",

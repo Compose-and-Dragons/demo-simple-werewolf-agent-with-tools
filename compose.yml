@@ -17,6 +17,6 @@ services:
 
 models:
   chat:
-    model: ai/qwen2.5:latest
+    model: ai/qwen2.5:1.5B-F16
   tools:
-    model: ai/qwen2.5:latest
+    model: hf.co/salesforce/llama-xlam-2-8b-fc-r-gguf:q4_k_m
