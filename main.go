@@ -87,9 +87,7 @@ func main() {
 
 	// Tools Completion parameters
 	toolsCompletionParams := openai.ChatCompletionNewParams{
-		Messages: []openai.ChatCompletionMessageParamUnion{
-			openai.SystemMessage(systemToolsInstructions),
-		},
+		Messages: []openai.ChatCompletionMessageParamUnion{},
 		//ParallelToolCalls: openai.Bool(true),
 		ParallelToolCalls: openai.Bool(false),
 		Tools:             toolsCatalog(),
@@ -173,10 +171,11 @@ func main() {
 		fmt.Println("🚀 Starting tools detection...")
 
 		// IMPORTANT: do not forget to set the user question in the params
-		toolsCompletionParams.Messages = append(
-			toolsCompletionParams.Messages,
+		toolsCompletionParams.Messages = []openai.ChatCompletionMessageParamUnion{
+			openai.SystemMessage(systemToolsInstructions),
 			openai.UserMessage(userInput),
-		)
+		}
+		
 
 		fmt.Println("⏳ Running tools completion...")
 		// Make initial Tool completion request
@@ -241,8 +240,9 @@ func main() {
 			fmt.Printf("😡 Stream error: %v\n", err)
 		}
 
-		fmt.Println(strings.Repeat("=", 80))
-		fmt.Println("")
+
+		fmt.Println("\n" + strings.Repeat("=", 80))
+		fmt.Println()
 
 		fmt.Println("\n🐺⛑️", werewolf.Health, "🧠", werewolf.Intelligence)
 
