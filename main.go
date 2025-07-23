@@ -90,7 +90,8 @@ func main() {
 		Messages: []openai.ChatCompletionMessageParamUnion{
 			openai.SystemMessage(systemToolsInstructions),
 		},
-		ParallelToolCalls: openai.Bool(true),
+		//ParallelToolCalls: openai.Bool(true),
+		ParallelToolCalls: openai.Bool(false),
 		Tools:             toolsCatalog(),
 		Model:             modelRunnerToolsModel,
 		Temperature:       openai.Opt(0.0),
