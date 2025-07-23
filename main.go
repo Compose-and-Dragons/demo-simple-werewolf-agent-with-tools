@@ -7,12 +7,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/budgies-nest/budgie/helpers"
 	"github.com/charmbracelet/huh"
 	"github.com/openai/openai-go"
 	"github.com/openai/openai-go/option"
 
 	"werewolf-agent/ui"
+	"werewolf-agent/helpers"
+
 )
 
 type Werewolf struct {
