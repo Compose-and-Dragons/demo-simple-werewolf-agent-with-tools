@@ -2,6 +2,8 @@ FROM golang:1.24.0-alpine AS builder
 WORKDIR /app
 COPY go.mod .
 COPY main.go .
+COPY helpers/ ./helpers/
+COPY ui/ ./ui/
 
 RUN <<EOF
 go mod tidy 
